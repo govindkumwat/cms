@@ -1,38 +1,164 @@
-.App {
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+
+.addpost {
+  justify-content: center;
+  margin: auto;
   text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  width: 50%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: sticky;
+  top: 30%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@media only screen and (max-width: 600px) {
+  .addpost {
+    width: 90%;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .postlist{
+    width: 90%;
+  }
+
+  .maincontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .addpost{
+    top: 5%;
+    position: unset;
   }
 }
+.addposttitle{
+  font-family: 'Lexend', sans-serif;
+  font-size: 30px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+
+.inputbox{
+  display: inline-block;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 10px;
+}
+
+.inputbox input{
+ 
+  display: inline-block;
+  padding: 0 16px 0 12px;
+  font-family: 'Lexend', sans-serif;
+
+  line-height: 30px;
+  height: 32px;
+  border: 1px solid #dddbda;
+  border-radius: 4px;
+  background-color: #fff;
+  color: rgb(8, 7, 7);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: border .1s linear,background-color .1s linear;
+  font-size: 16px;
+
+}
+
+.inputbox textarea{
+ 
+  display: inline-block;
+  padding: 0 16px 0 12px;
+ 
+  line-height: 30px;
+  font-family: 'Lexend', sans-serif;
+
+  border: 1px solid #dddbda;
+  border-radius: 4px;
+  background-color: #fff;
+  color: rgb(8, 7, 7);
+  transition: border .1s linear,background-color .1s linear;
+  font-size: 16px;
+
+}
+
+.inputbox input :focus{
+  border-color: #1b96ff;
+  color: var(--sds-c-input-text-color-focus);
+  box-shadow: rgb(1, 118, 211) 0px 0px 3px 0px;
+}
+
+.inputbox textarea :focus{
+  border-color: #1b96ff;
+  color: var(--sds-c-input-text-color-focus);
+  box-shadow: rgb(1, 118, 211) 0px 0px 3px 0px;
+}
+
+.inputbox button {
+  font-family: 'Lexend', sans-serif;
+
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+  background: #FFD814;
+  border: 1px solid #FCD200;
+  height: 31px;
+  padding: 0 11px;
+  text-align: center;
+  width: 100%;
+  min-width: 200px;
+  font-weight: 500;
+  color: #0F1111;
+  font-size: 16px;
+  
+  
+}
+
+.inputbox button:hover{
+  background: #F7CA00;
+  border-color: #F2C200;
+  box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+}
+
+
+.recent{
+  padding: 10px;
+  font-family: 'Lexend', sans-serif;
+
+
+ 
+}
+
+.postlist{
+  padding: 10px;
+  margin: 0 10px 10px 10px;
+  padding-top: 10px;
+ 
+  width: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Lexend', sans-serif;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.description {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.maincontainer {
+  display: flex;
+  gap: 10;
+  padding: 16px;
+}
+
+
